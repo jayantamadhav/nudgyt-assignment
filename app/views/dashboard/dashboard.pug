@@ -1,0 +1,20 @@
+extends _dashboardLayout
+
+block dashboardContent
+    .container 
+        span.fs-3 Users
+    if users
+        table.table.table-hover.m-3
+            thead.table-dark
+                tr
+                    th(scope="col") Username                    
+                    th(scope="col") First Name
+                    th(scope="col") Last Name
+                    th(scope="col") Date Joined
+            tbody 
+                each user in users
+                    tr 
+                        th #{user.username}
+                        th #{user.firstname}
+                        th #{user.lastname}
+                        th #{moment(user.dateJoined).format('Do MMM, YYYY')}

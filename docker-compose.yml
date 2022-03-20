@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  node:
+    container_name: node-backend
+    build: ./app/
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/code
+    links:
+      - mongo
+    
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb:/data/db
+volumes:
+  mongodb:

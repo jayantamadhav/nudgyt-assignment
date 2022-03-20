@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none !important;
+}
+
+/* FORM */
+input[type="text"], input[type="text"]:focus,
+input[type="password"], input[type="password"]:focus,
+input[type="email"], input[type="email"]:focus{
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background-color: #f6f6f6;
+    transition: all 0.3s ease-in;
+}
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover{
+    background-color: #eee;
+}
+
+/* BUTTONS */
+.btn{
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+/* FONTS */
+.fs-1{
+    font-size: 40px;
+}
+.fs-2{
+    font-size: 32px;
+}
+.fs-3{
+    font-size: 26px;
+}
+.fs-4{
+    font-size: 22px;
+}
+.fs-5{
+    font-size: 18px;
+}
+.fs-5{
+    font-size: 16px;
+}
+.fs-6{
+    font-size: 14px;
+}
+.fs-7{
+    font-size: 12px;
+}
+.fs-8{
+    font-size: 10px;
+}
+
+/* UTILS */
+.animated-background{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1568.79 629.93 a205.63 205.63 0 1 0 411.26 0 a205.63 205.63 0 1 0 -411.26 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-24.83 243.09 a326.96 326.96 0 1 0 653.92 0 a326.96 326.96 0 1 0 -653.92 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1013.5560814132195 430.10325019505126L872.5107051389339 164.8354782212707 607.2429331651533 305.88085449555643 748.288309439439 571.1486264693369z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1525.848%2c607.586C1580.37%2c603.666%2c1627.246%2c573.586%2c1655.95%2c527.066C1686.41%2c477.7%2c1702.27%2c417.034%2c1675.022%2c365.825C1646.351%2c311.941%2c1586.87%2c283.905%2c1525.848%2c282.55C1462.164%2c281.136%2c1398.638%2c305.003%2c1364.74%2c358.935C1328.694%2c416.284%2c1321.897%2c491.59%2c1358.729%2c548.437C1393.168%2c601.59%2c1462.676%2c612.128%2c1525.848%2c607.586' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1689.0725063472164-122.71560777721226L1537.3412558377622 86.12454219448293 1746.1814058094574 237.85579270393703 1897.9126563189116 29.015642732241844z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M278.02224871347676 739.7858657382217L256.74345945517285 983.0035399000715 499.96113361702265 1004.2823291583754 521.2399228753266 761.0646549965255z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.feather-16{
+    width: 16px;
+    height: 16px;
+}
+.feather-32{
+    width: 32px;
+    height: 32px;
+}
+.rounded{
+    border-radius: 10px;
+}
+
+/* LOGIN */
+.login-container{
+    width: 480px;
+    border-radius: 20px;
+}
+
+
+/* DASHBOARD*/
+.dashboard-sidebar-item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    color: #0d6efd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.dashboard-sidebar-item:hover{
+    background-color: #ddd;
+}

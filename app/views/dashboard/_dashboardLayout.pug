@@ -1,0 +1,10 @@
+extends ../_base
+
+block content 
+    include _dashboardNavbar
+    .container
+        .row.mt-4
+            .col-sm-12.col-md-3 
+                include _dashboardSidebar
+            .col-sm-12.col-md-9 
+                block dashboardContent

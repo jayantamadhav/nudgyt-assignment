@@ -1,0 +1,47 @@
+div.d-flex.justify-content-center.align-items-center(style="height: 100vh")
+    div.login-container.p-3
+        div.text-primary(style="font-size: 2rem") Register
+        span Already got an account ? 
+            a(href="/") Login
+        form(role="form", method="POST", action="/register" id="registration-form")
+            div.alert.alert-danger#formErrors(style="display: none")
+                if error  
+                    #{error}
+            div.mt-4
+                input.form-control(type="text" placeholder="First Name" name="firstname" value=firstname required)
+            div.mt-3
+                input.form-control(type="text" placeholder="Last Name" name="lastname" value=lastname required)
+            div.mt-3
+                input.form-control(type="text" placeholder="Username" name="username" value=username required)
+                if username_taken 
+                    div.p-2.text-danger 
+                        strong #{username} has already been taken, please try again with a different username 
+            div.mt-3
+                input.form-control(type="email" placeholder="Email" name="email" value=email required)
+                if email_registered
+                    div.p-2.text-danger  
+                        strong #{email} has already been registered. Try 
+                            a(href="/") Logging in
+            div.mt-5 Almost done, please set a password
+            div.mt-3
+                input.form-control(type="password" placeholder="Set a Password" name="password", required)
+            div.mt-3
+                input.form-control(type="password" placeholder="Confirm Password" name="password1" required)
+            div.my-2.d-flex.justify-content-end.align-items-center
+                button.my-3.btn.btn-primary(type="submit") Register
+                    i.feather-16(data-feather="chevron-right")
+        
+        script.
+            $(document).ready(() => {
+                $('#registration-form').on('submit', (e) => {
+                    e.preventDefault();
+                    let errors = $('#formErrors');
+                    if (e.target.password.value != e.target.password1.value) {
+                        errors.html();
+                        errors.html('Password mismatch, please check the password and then try again')
+                        errors.show(200);
+                    }
+                    errors.hide(200);
+                    e.target.submit();
+                })
+            })

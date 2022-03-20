@@ -1,0 +1,22 @@
+extends _base
+
+block content
+    div
+        div.row
+            div.col-sm-12.col-md-6.animated-background
+                div.container.p-5.text-light.d-flex.justify-content-center.align-items-start.flex-column(style="height: 90vh")
+                    div(style="font-size: 4rem; font-weight: 300") Why Nudgyt?
+                    p(style="font-weight: 300")
+                        | We train our A.I to interpret data and present actionable solutions in a way anyone can understand. 
+                        | No more confusing dashboards!
+                    div
+                        |1. Nudgyt A.I scrutinizes data and identifies patterns you should be aware of.
+                    div 
+                        |2. Nudgyt alerts you to these trends in a manner suited to your personality
+                    div    
+                        |3.  Take action and resolve challenges with our curated, personality specific library of actions 
+            div.col-sm-12.col-md-6(style="box-shadow: 0px 0px 10px #000")
+                if page === "login"
+                    include login.pug 
+                else 
+                    include register.pug
